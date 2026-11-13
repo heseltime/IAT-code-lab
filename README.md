@@ -5,7 +5,9 @@ English, for high school students, about AI and programming / software engineeri
 principles (how does a neural network learn?) to a working AI-assisted software project of their own, with the tools
 professionals use: Claude Code, Git, Python and VS Code.
 
-The full plan is in the [curriculum](Coding_Lab_Curriculum_2026_v0.9.1.pdf).
+The full plan is in the [curriculum](Coding_Lab_Curriculum_2026_v0.9.1.pdf). To change it, edit
+[`curriculum/build_curriculum.py`](curriculum/build_curriculum.py), bump `VERSION` and run
+`python3 curriculum/build_curriculum.py` (needs ReportLab).
 
 ## Projects
 
