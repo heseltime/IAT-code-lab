@@ -1,0 +1,16 @@
+# Files and folders that Git should not track.
+# Note: Git does not allow a comment after a pattern on the same line, so comments go on their own line.
+
+# Planning and course development files (marketing: see the IAT materials; teaching plan: see the curriculum PDF)
+marketing-materials/
+teaching-plan/
+
+# macOS and editors
+.DS_Store
+.vscode/
+.obsidian/
+
+# Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/

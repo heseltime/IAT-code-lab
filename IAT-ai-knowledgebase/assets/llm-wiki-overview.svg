@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>How your LLM wiki works</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="600" fill="#ffffff"/>
+
+  <text x="500" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">How your LLM wiki works</text>
+  <text x="500" y="72" text-anchor="middle" font-size="15" fill="#6b7280">You collect the sources. The agent writes the wiki. You read it and check it.</text>
+
+  <!-- Sources -->
+  <rect x="40" y="170" width="200" height="220" rx="16" fill="#f3f4f6" stroke="#d1d5db"/>
+  <text x="140" y="205" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Your sources</text>
+  <text x="140" y="227" text-anchor="middle" font-size="13" fill="#6b7280" font-family="Menlo, Consolas, monospace">raw/</text>
+  <text x="140" y="262" text-anchor="middle" font-size="15" fill="#374151">Class notes</text>
+  <text x="140" y="290" text-anchor="middle" font-size="15" fill="#374151">Worksheets</text>
+  <text x="140" y="318" text-anchor="middle" font-size="15" fill="#374151">Articles</text>
+  <text x="140" y="346" text-anchor="middle" font-size="15" fill="#374151">Transcripts</text>
+  <text x="140" y="374" text-anchor="middle" font-size="13" fill="#6b7280">never changed</text>
+
+  <!-- Ingest arrow -->
+  <line x1="244" y1="280" x2="346" y2="280" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="258" y="248" width="76" height="24" rx="12" fill="#2563eb"/>
+  <text x="296" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">INGEST</text>
+  <text x="296" y="304" text-anchor="middle" font-size="12" fill="#6b7280">read once,</text>
+  <text x="296" y="320" text-anchor="middle" font-size="12" fill="#6b7280">write pages</text>
+
+  <!-- Wiki -->
+  <rect x="350" y="120" width="300" height="320" rx="18" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="500" y="156" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a">The wiki</text>
+  <text x="500" y="178" text-anchor="middle" font-size="13" fill="#6b7280" font-family="Menlo, Consolas, monospace">wiki/</text>
+  <rect x="380" y="194" width="240" height="44" rx="10" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="500" y="222" text-anchor="middle" font-size="15" fill="#1f2937">Index: list of all pages</text>
+  <rect x="380" y="248" width="240" height="44" rx="10" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="500" y="276" text-anchor="middle" font-size="15" fill="#1f2937">Sources: one summary each</text>
+  <rect x="380" y="302" width="240" height="44" rx="10" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="500" y="330" text-anchor="middle" font-size="15" fill="#1f2937">Concepts: one page per idea</text>
+  <rect x="380" y="356" width="240" height="44" rx="10" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="500" y="384" text-anchor="middle" font-size="15" fill="#1f2937">Open questions · Answers</text>
+  <text x="500" y="424" text-anchor="middle" font-size="13" fill="#6b7280">all pages linked to each other</text>
+
+  <!-- Lint loop -->
+  <path d="M 600 120 C 600 82, 680 82, 680 120 C 680 140, 665 150, 652 155" fill="none" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="692" y="92" width="62" height="24" rx="12" fill="#d97706"/>
+  <text x="723" y="109" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">LINT</text>
+  <text x="764" y="109" font-size="13" fill="#6b7280">check: broken links, gaps,</text>
+  <text x="764" y="127" font-size="13" fill="#6b7280">contradictions</text>
+
+  <!-- Query arrow -->
+  <line x1="654" y1="280" x2="756" y2="280" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="668" y="248" width="76" height="24" rx="12" fill="#059669"/>
+  <text x="706" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">QUERY</text>
+  <text x="706" y="304" text-anchor="middle" font-size="12" fill="#6b7280">you ask</text>
+
+  <!-- Answers -->
+  <rect x="760" y="170" width="200" height="220" rx="16" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="860" y="205" text-anchor="middle" font-size="18" font-weight="700" fill="#064e3b">Answers</text>
+  <text x="860" y="250" text-anchor="middle" font-size="15" fill="#374151">"What is gradient</text>
+  <text x="860" y="272" text-anchor="middle" font-size="15" fill="#374151">descent?"</text>
+  <text x="860" y="312" text-anchor="middle" font-size="15" fill="#374151">Quizzes · cheat sheets</text>
+  <text x="860" y="350" text-anchor="middle" font-size="15" fill="#374151">with links to the pages</text>
+
+  <!-- Rules -->
+  <line x1="500" y1="482" x2="500" y2="446" stroke="#4b5563" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arr)"/>
+  <rect x="260" y="486" width="480" height="76" rx="14" fill="#f9fafb" stroke="#d1d5db"/>
+  <text x="500" y="514" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">AGENTS.md = the rules the agent follows</text>
+  <text x="500" y="540" text-anchor="middle" font-size="13" fill="#6b7280" font-family="Menlo, Consolas, monospace">Claude Code skills: wiki-ingest · wiki-query · wiki-lint</text>
+</svg>
