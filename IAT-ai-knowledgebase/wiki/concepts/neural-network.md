@@ -23,7 +23,7 @@ The notebook first trains **a single neuron** to classify points into two groups
 on the same kind of task. It shows the training as an animation: you can watch the border between the classes move.
 This demo is adapted from a template by Andrej Karpathy.
 
-The last step is **MNIST**: recognising handwritten digits (0–9) with PyTorch, in a separate script.
+The last step is **MNIST**: recognizing handwritten digits (0–9) with PyTorch, in a separate script.
 
 ## Related
 

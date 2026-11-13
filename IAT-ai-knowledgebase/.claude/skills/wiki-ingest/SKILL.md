@@ -29,7 +29,7 @@ in AGENTS.md. Don't repeat or change them here.
 5. **Write** after the user says yes. Then add every new page to `wiki/index.md` and append a log entry:
    `## [YYYY-MM-DD] ingest | <source title>` with Added / Updated / Open lines.
 6. **Check:** run `bash scripts/lint.sh` and fix any ERROR you caused.
-7. **Summarise:** list the files changed and propose the commit message `wiki(ingest): <source title>`. Don't commit
+7. **Summarize:** list the files changed and propose the commit message `wiki(ingest): <source title>`. Don't commit
    unless the user asks.
 
 ## Guardrails

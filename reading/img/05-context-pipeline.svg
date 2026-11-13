@@ -44,6 +44,6 @@
 
   <rect x="40" y="290" width="920" height="80" rx="14" fill="#f9fafb" stroke="#d1d5db"/>
   <text x="60" y="320" font-size="15" font-weight="700" fill="#111827">Why it matters for you</text>
-  <text x="60" y="345" font-size="14" fill="#374151">In a long chat, early details can get summarised away. Put important rules in a file (CLAUDE.md, AGENTS.md)</text>
+  <text x="60" y="345" font-size="14" fill="#374151">In a long chat, early details can get summarized away. Put important rules in a file (CLAUDE.md, AGENTS.md)</text>
   <text x="60" y="363" font-size="14" fill="#374151">and not only in the chat. Start a new session for a new task. That is also why the LLM wiki keeps everything in files.</text>
 </svg>

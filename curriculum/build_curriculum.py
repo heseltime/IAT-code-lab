@@ -29,7 +29,7 @@ PAPER_TITLE = "Dive into Claude Code: The Design Space of Today's and Future AI 
 PAPER_URL = "https://arxiv.org/pdf/2604.14228"
 
 INTRO = (
-    "A project-based programme guiding high school students from first principles to a working AI-assisted "
+    "A project-based program guiding high school students from first principles to a working AI-assisted "
     "software project — learning to code with modern tools, collaborate like professionals, and share their "
     "work with the world. Each session pairs hands-on work with assigned sections from the course paper: "
     f'<a href="{PAPER_URL}"><u><i>{PAPER_TITLE}</i></u></a> (Liu et al., 2026).'
@@ -43,15 +43,15 @@ GEQ = '<font name="Symbol">≥</font>'
 SESSIONS = [
     ("0", "Overview, Demo &amp;<br/>Housekeeping",
      ["Project scope walkthrough and live demo",
-      "Claude Code licence setup &amp; tool installation",
+      "Claude Code license setup &amp; tool installation",
       "Ground rules &amp; getting to know each other",
-      "To do: fix session dates for the full programme"],
+      "To do: fix session dates for the full program"],
      "§1 Introduction · §2 Design<br/>Philosophies &amp; Principles",
      "~1 session"),
     ("1", "Git, Python &amp; Code Agents",
      ["Command-line basics, Git fundamentals, Python crash-course",
       "What is a coding agent? Claude commands &amp; core concepts",
-      f"Neural networks {ARROW} tokens {ARROW} emergent behaviour {ARROW} today's AI coding tools"],
+      f"Neural networks {ARROW} tokens {ARROW} emergent behavior {ARROW} today's AI coding tools"],
      "§3 Architecture Overview ·<br/>§4 Turn Execution: The<br/>Agentic Query Loop",
      "~1 session"),
     ("2", "Project Repo Setup",
@@ -88,7 +88,7 @@ NOTE = (
     "The lab will communicate via WhatsApp group and also receive important updates like the finalized schedule "
     "there. Please let the instructor know if you do not want to or cannot use this platform."
 )
-FOOTER_LEFT = ("Total programme: approx. 10–12 sessions · Tools: Claude Code, Git,<br/>Python, VS Code "
+FOOTER_LEFT = ("Total program: approx. 10–12 sessions · Tools: Claude Code, Git,<br/>Python, VS Code "
                "· Session dates fixed in first meeting")
 
 # --------------------------------------------------------------------------------------------------

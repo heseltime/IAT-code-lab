@@ -19,7 +19,7 @@ updated: 2026-11-13
 The notebook is a script ("Drehbuch") for a 1.5-hour introduction to neural networks. It starts with the simplest
 possible model, a straight line with one parameter, and builds up step by step: an error function, the derivative as
 the direction to the minimum, gradient descent with `micrograd`, a drawing of the computation graph, a model with two
-parameters, a single neuron that classifies points, and finally a whole neural network. The last step, recognising
+parameters, a single neuron that classifies points, and finally a whole neural network. The last step, recognizing
 handwritten digits (MNIST), is a separate script. The neural-network demo is adapted from a template by Andrej
 Karpathy.
 
@@ -27,7 +27,7 @@ Karpathy.
 
 1. Linear regression with one parameter (the slope of the line) → [linear regression](../concepts/linear-regression.md)
 2. The sum of the (squared) residuals as the error function → [loss function](../concepts/loss-function.md)
-3. The derivative as the direction towards the minimum → [gradient descent](../concepts/gradient-descent.md)
+3. The derivative as the direction toward the minimum → [gradient descent](../concepts/gradient-descent.md)
 4. `micrograd` for linear regression: change the parameter β₁ in the direction of the negative derivative (gradient)
    → [gradient descent](../concepts/gradient-descent.md)
 5. A drawing of the computation graph, first with one data point, then with three. Each time, a calculation by hand

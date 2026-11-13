@@ -15,7 +15,7 @@ has three parts:
 > Jiacheng Liu, Xiaohan Zhao, Xinyi Shang, Zhiqiang Shen (2026).
 > **Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems.**
 > [arXiv:2604.14228](https://arxiv.org/abs/2604.14228) · [read online (HTML)](https://arxiv.org/html/2604.14228) ·
-> [GitHub](https://github.com/VILA-Lab/Dive-into-Claude-Code) · licence CC BY-NC-SA 4.0
+> [GitHub](https://github.com/VILA-Lab/Dive-into-Claude-Code) · license CC BY-NC-SA 4.0
 
 The authors studied a public copy of Claude Code's source code (version 2.1.88). They asked: what does a real coding
 agent consist of, and why was it built this way? Then they compared it with two other agent systems, OpenClaw and
@@ -53,7 +53,7 @@ values:
 From these come **thirteen design principles**. Six of them are worth remembering, because you will meet them in
 this lab:
 
-- **Deny first, then ask a human.** If the agent wants to do something it doesn't recognise, it is blocked or it asks.
+- **Deny first, then ask a human.** If the agent wants to do something it doesn't recognize, it is blocked or it asks.
 - **Graduated trust.** You choose how much the agent may do alone (see [permissions](#permissions-and-safety)).
 - **Context is a scarce resource.** The model can only read so much at once, so it is managed carefully.
 - **Minimal scaffolding, maximal harness.** Little code tells the model *how to think*. Lots of code keeps it safe
@@ -85,7 +85,7 @@ a hook stops it, or when you press Escape (§4.5).
 If the loop is so simple, what is all the rest of the code? The paper calls it the **harness**: everything that makes
 the loop safe, efficient and useful.
 
-![The model in the centre, surrounded by tools, permissions, context management, memory, extensions and subagents; a bar shows 1.6% decision logic and 98.4% harness](img/03-harness.svg)
+![The model in the center, surrounded by tools, permissions, context management, memory, extensions and subagents; a bar shows 1.6% decision logic and 98.4% harness](img/03-harness.svg)
 
 > "Most of the code, however, lives in the systems around this loop." (Abstract)
 
@@ -204,7 +204,7 @@ materials show the paper's ideas at work:
 | Reading a lot of code or text quickly | Knowing what I can't see: files I didn't open, things that happened after my training |
 | Writing first drafts, boilerplate, tests | Knowing when I'm wrong, unless I test it |
 | Explaining something at different levels | Deciding what *you* actually want, if you don't say it |
-| Not getting bored by bookkeeping | Taste and judgement on what is worth building |
+| Not getting bored by bookkeeping | Taste and judgment on what is worth building |
 
 **What's new in the field (late 2026).** These are the topics people are working on:
 

@@ -2,7 +2,7 @@
 
 You are the maintainer of a small **LLM wiki**, following Andrej Karpathy's
 [LLM Wiki idea](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
-The human collects sources and asks questions. You do the bookkeeping: summarise, link, file and check.
+The human collects sources and asks questions. You do the bookkeeping: summarize, link, file and check.
 
 > "The tedious part of maintaining a knowledge base is not the reading or the thinking — it's the bookkeeping."
 > — Andrej Karpathy
@@ -22,7 +22,7 @@ together: when a rule does not work, propose a change to this file.
 
 ```
 wiki/
-├── index.md            # Catalogue of every page, with a one-line summary. Read it first.
+├── index.md            # Catalog of every page, with a one-line summary. Read it first.
 ├── log.md              # Append-only diary of every ingest, query and lint.
 ├── open-questions.md   # Things the sources don't answer yet, or that contradict each other.
 ├── sources/            # One summary page per raw source:  sources/<slug>.md

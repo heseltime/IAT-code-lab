@@ -1,7 +1,7 @@
 # Exercises
 
 Hands-on tasks, from "look around" to "build your own skill". Each one takes 15–45 minutes. The session numbers
-follow the [Coding Lab curriculum](../../README.md#the-programme).
+follow the [Coding Lab curriculum](../../README.md#the-program).
 
 You need: this repository open in VS Code, a terminal, and Claude Code (`claude` in the terminal, started in the
 repository folder). Write your answers in a notebook or a file outside `wiki/`.

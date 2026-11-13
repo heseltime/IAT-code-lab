@@ -1,6 +1,6 @@
 # IAT Coding Lab 2026
 
-Materials for the **Coding Lab** at the Internationale Akademie Traunkirchen (IAT): a project-based programme in
+Materials for the **Coding Lab** at the Internationale Akademie Traunkirchen (IAT): a project-based program in
 English, for high school students, about AI and programming / software engineering. Students go from first
 principles (how does a neural network learn?) to a working AI-assisted software project of their own, with the tools
 professionals use: Claude Code, Git, Python and VS Code.
@@ -19,7 +19,7 @@ The full plan is in the [curriculum](Coding_Lab_Curriculum_2026_v0.9.1.pdf). To 
 The two projects are connected: the example wiki in `IAT-ai-knowledgebase` was built from the notebook in
 `IAT-nns-for-students`. So the wiki explains, in its own pages, how the kind of model that maintains it learns.
 
-## The programme
+## The program
 
 | Session | Topic | Projects |
 |---|---|---|
