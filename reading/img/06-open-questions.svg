@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>Six open questions for future agents</title>
+  <rect width="1000" height="470" fill="#ffffff"/>
+
+  <text x="500" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">Six open questions for future agents</text>
+  <text x="500" y="72" text-anchor="middle" font-size="15" fill="#6b7280">Nobody has solved these yet (§13). Some of them may be solved by your generation.</text>
+
+  <g font-size="14" fill="#374151">
+    <rect x="40" y="105" width="290" height="140" rx="14" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="60" y="137" font-size="16" font-weight="700" fill="#1e3a8a">1 · Silent failures</text>
+    <text x="60" y="167">How do we notice when an agent</text>
+    <text x="60" y="187">is quietly wrong, and nothing</text>
+    <text x="60" y="207">crashes?</text>
+
+    <rect x="355" y="105" width="290" height="140" rx="14" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="375" y="137" font-size="16" font-weight="700" fill="#1e3a8a">2 · Memory</text>
+    <text x="375" y="167">What should an agent remember</text>
+    <text x="375" y="187">about you and your project</text>
+    <text x="375" y="207">from one session to the next?</text>
+
+    <rect x="670" y="105" width="290" height="140" rx="14" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="690" y="137" font-size="16" font-weight="700" fill="#1e3a8a">3 · Beyond coding</text>
+    <text x="690" y="167">Where, when and with whom may</text>
+    <text x="690" y="187">an agent act, outside a coding</text>
+    <text x="690" y="207">session?</text>
+
+    <rect x="40" y="270" width="290" height="140" rx="14" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="60" y="302" font-size="16" font-weight="700" fill="#1e3a8a">4 · Long projects</text>
+    <text x="60" y="332">Can it stay reliable over weeks</text>
+    <text x="60" y="352">and many sessions, like a whole</text>
+    <text x="60" y="372">research project?</text>
+
+    <rect x="355" y="270" width="290" height="140" rx="14" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="375" y="302" font-size="16" font-weight="700" fill="#1e3a8a">5 · Oversight at scale</text>
+    <text x="375" y="332">Which logs and controls will laws</text>
+    <text x="375" y="352">and society need when millions</text>
+    <text x="375" y="372">of agents are at work?</text>
+
+    <rect x="670" y="270" width="290" height="140" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <text x="690" y="302" font-size="16" font-weight="700" fill="#78350f">6 · Your own skills</text>
+    <text x="690" y="332">How do people keep understanding</text>
+    <text x="690" y="352">their code, and keep learning,</text>
+    <text x="690" y="372">when an agent writes most of it?</text>
+  </g>
+
+  <text x="500" y="448" text-anchor="middle" font-size="13" fill="#6b7280">Liu et al., 2026, §13.1–§13.6, in simple words. Question 6 is the one this lab is about.</text>
+</svg>

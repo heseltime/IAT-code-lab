@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>The model and its harness</title>
+  <rect width="1000" height="600" fill="#ffffff"/>
+
+  <text x="500" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">The model is small. The harness is big.</text>
+  <text x="500" y="72" text-anchor="middle" font-size="15" fill="#6b7280">The model decides. Everything around it makes those decisions safe and useful.</text>
+
+  <!-- Harness frame -->
+  <rect x="30" y="95" width="940" height="360" rx="22" fill="#f9fafb" stroke="#9ca3af" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="56" y="122" font-size="14" font-weight="700" fill="#6b7280">THE HARNESS (Claude Code)</text>
+
+  <!-- connectors -->
+  <g stroke="#9ca3af" stroke-width="2">
+    <line x1="330" y1="175" x2="400" y2="255"/>
+    <line x1="330" y1="295" x2="400" y2="275"/>
+    <line x1="330" y1="400" x2="400" y2="295"/>
+    <line x1="670" y1="175" x2="600" y2="255"/>
+    <line x1="670" y1="295" x2="600" y2="275"/>
+    <line x1="670" y1="400" x2="600" y2="295"/>
+  </g>
+
+  <!-- Model -->
+  <rect x="400" y="235" width="200" height="80" rx="16" fill="#2563eb"/>
+  <text x="500" y="269" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff">The model</text>
+  <text x="500" y="293" text-anchor="middle" font-size="13" fill="#dbeafe">reads, thinks, decides</text>
+
+  <!-- Left column -->
+  <rect x="60" y="140" width="270" height="70" rx="12" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="195" y="168" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Tools</text>
+  <text x="195" y="192" text-anchor="middle" font-size="13" fill="#4b5563">up to 54 built in, plus MCP servers</text>
+
+  <rect x="60" y="260" width="270" height="70" rx="12" fill="#ffffff" stroke="#fcd34d"/>
+  <text x="195" y="288" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Permissions and sandbox</text>
+  <text x="195" y="312" text-anchor="middle" font-size="13" fill="#4b5563">layers of checks, "deny" always wins</text>
+
+  <rect x="60" y="365" width="270" height="70" rx="12" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="195" y="393" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Context management</text>
+  <text x="195" y="417" text-anchor="middle" font-size="13" fill="#4b5563">5 stages that keep the input small</text>
+
+  <!-- Right column -->
+  <rect x="670" y="140" width="270" height="70" rx="12" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="805" y="168" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Memory</text>
+  <text x="805" y="192" text-anchor="middle" font-size="13" fill="#4b5563">CLAUDE.md files, plain text, no database</text>
+
+  <rect x="670" y="260" width="270" height="70" rx="12" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="805" y="288" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Extensions</text>
+  <text x="805" y="312" text-anchor="middle" font-size="13" fill="#4b5563">skills · plugins · hooks · MCP</text>
+
+  <rect x="670" y="365" width="270" height="70" rx="12" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="805" y="393" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">Subagents</text>
+  <text x="805" y="417" text-anchor="middle" font-size="13" fill="#4b5563">helpers with their own context</text>
+
+  <!-- Code share bar -->
+  <text x="60" y="497" font-size="14" font-weight="700" fill="#1e3a8a">1.6% decision logic</text>
+  <text x="940" y="497" text-anchor="end" font-size="14" font-weight="700" fill="#374151">98.4% operational harness</text>
+  <rect x="60" y="508" width="880" height="26" rx="6" fill="#d1d5db"/>
+  <rect x="60" y="508" width="14" height="26" rx="3" fill="#2563eb"/>
+  <text x="500" y="562" text-anchor="middle" font-size="13" fill="#6b7280">Share of Claude Code's source code (a community estimate the paper cites, §3.1)</text>
+</svg>

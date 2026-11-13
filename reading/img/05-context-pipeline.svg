@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>When the context gets full</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="400" fill="#ffffff"/>
+
+  <text x="500" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">When the context gets full</text>
+  <text x="500" y="72" text-anchor="middle" font-size="15" fill="#6b7280">The model can only see so much at once. Claude Code makes room in five stages, cheapest first.</text>
+
+  <g font-size="15" font-weight="700" text-anchor="middle">
+    <rect x="40" y="120" width="160" height="80" rx="14" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="120" y="152" fill="#1e3a8a">1</text>
+    <text x="120" y="176" fill="#1e3a8a">Budget reduction</text>
+
+    <rect x="230" y="120" width="160" height="80" rx="14" fill="#dbeafe" stroke="#93c5fd"/>
+    <text x="310" y="152" fill="#1e3a8a">2</text>
+    <text x="310" y="176" fill="#1e3a8a">Snip</text>
+
+    <rect x="420" y="120" width="160" height="80" rx="14" fill="#bfdbfe" stroke="#60a5fa"/>
+    <text x="500" y="152" fill="#1e3a8a">3</text>
+    <text x="500" y="176" fill="#1e3a8a">Microcompact</text>
+
+    <rect x="610" y="120" width="160" height="80" rx="14" fill="#93c5fd" stroke="#3b82f6"/>
+    <text x="690" y="152" fill="#1e3a8a">4</text>
+    <text x="690" y="176" fill="#1e3a8a">Context collapse</text>
+
+    <rect x="800" y="120" width="160" height="80" rx="14" fill="#2563eb" stroke="#1d4ed8"/>
+    <text x="880" y="152" fill="#ffffff">5</text>
+    <text x="880" y="176" fill="#ffffff">Auto-compact</text>
+  </g>
+  <g stroke="#4b5563" stroke-width="2.5">
+    <line x1="202" y1="160" x2="226" y2="160" marker-end="url(#arr)"/>
+    <line x1="392" y1="160" x2="416" y2="160" marker-end="url(#arr)"/>
+    <line x1="582" y1="160" x2="606" y2="160" marker-end="url(#arr)"/>
+    <line x1="772" y1="160" x2="796" y2="160" marker-end="url(#arr)"/>
+  </g>
+
+  <line x1="60" y1="235" x2="936" y2="235" stroke="#9ca3af" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="60" y="258" font-size="13" fill="#6b7280">gentle, cheap, loses almost nothing</text>
+  <text x="940" y="258" text-anchor="end" font-size="13" fill="#6b7280">strong: the model writes a summary of everything</text>
+
+  <rect x="40" y="290" width="920" height="80" rx="14" fill="#f9fafb" stroke="#d1d5db"/>
+  <text x="60" y="320" font-size="15" font-weight="700" fill="#111827">Why it matters for you</text>
+  <text x="60" y="345" font-size="14" fill="#374151">In a long chat, early details can get summarised away. Put important rules in a file (CLAUDE.md, AGENTS.md)</text>
+  <text x="60" y="363" font-size="14" fill="#374151">and not only in the chat. Start a new session for a new task. That is also why the LLM wiki keeps everything in files.</text>
+</svg>

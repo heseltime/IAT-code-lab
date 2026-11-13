@@ -5,7 +5,7 @@ English, for high school students, about AI and programming / software engineeri
 principles (how does a neural network learn?) to a working AI-assisted software project of their own, with the tools
 professionals use: Claude Code, Git, Python and VS Code.
 
-The full plan is in the [curriculum](Coding_Lab_Curriculum_2026_v0.9.pdf).
+The full plan is in the [curriculum](Coding_Lab_Curriculum_2026_v0.9.1.pdf).
 
 ## Projects
 
@@ -28,8 +28,7 @@ The two projects are connected: the example wiki in `IAT-ai-knowledgebase` was b
 | 4 | Architecture, extensions and learning paths: knowledge graphs, Open Knowledge Format, how teams work | Exercise discussion questions |
 | 5 | Stories, epics and closing: Scrum, wrap-up, using the tools for school | Your project |
 
-Each session also has a reading from the course paper *Dive into Claude Code: The Design Space of Today's and
-Future AI Agent Systems* (Liu et al., 2026). The curriculum lists the sections.
+Each session also has a reading from the course paper. See [Required reading](#required-reading) below.
 
 ## Getting started
 
@@ -41,7 +40,21 @@ Future AI Agent Systems* (Liu et al., 2026). The curriculum lists the sections.
 `IAT-ai-knowledgebase` needs nothing beyond these tools. `IAT-nns-for-students` also needs Python and some packages;
 its README has the setup.
 
-## Not in Git
+## Required reading
 
-`teaching-plan/` (session notes) and `marketing-materials/` (flyers) are planning files for the lab lead and are
-ignored by Git (see [`.gitignore`](.gitignore)).
+**[How coding agents work](reading/coding-agents.md)**: a guide to the course paper, *Dive into Claude Code: The
+Design Space of Today's and Future AI Agent Systems* (Liu et al., 2026,
+[arXiv:2604.14228](https://arxiv.org/abs/2604.14228)).
+
+[![The agent loop: build the context, ask the model, check permission, run the tool, add the result, repeat](reading/img/02-agent-loop.svg)](reading/coding-agents.md)
+
+The guide has:
+
+- **A reading map:** which sections of the paper to read for each session.
+- **A summary with diagrams:** the agent loop, the harness around the model, permission modes, context and memory,
+  extensions, and the six open questions for future agents.
+- **A take from a coding agent itself:** what it's like inside the loop, and what's new in the field.
+- **What it means for you:** why understanding, clear writing and checking matter more than ever, and things to
+  try this week.
+
+Read it before session 1, and come back to it each session.

@@ -127,6 +127,9 @@ wiki for it. Some ideas to go further:
 
 ## Want to read more?
 
+- **Required reading for the lab:** [How coding agents work](../reading/coding-agents.md), a guide to the course
+  paper. It explains the loop, the skills and the memory files that this wiki uses, and why the agent asks before
+  it acts.
 - Andrej Karpathy: [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), the original
   idea (April 2026). It is written to be pasted to an AI agent, which then builds the details with you.
 - [Claude Code skills](https://docs.claude.com/en/docs/claude-code/skills): how the skills in `.claude/skills/`

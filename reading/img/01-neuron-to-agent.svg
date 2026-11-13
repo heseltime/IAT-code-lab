@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>From a single neuron to a coding agent</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="360" fill="#ffffff"/>
+
+  <text x="500" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">From a single neuron to a coding agent</text>
+  <text x="500" y="72" text-anchor="middle" font-size="15" fill="#6b7280">Every step builds on the one before. Nothing in it is magic.</text>
+
+  <!-- 1 Neuron -->
+  <rect x="30" y="110" width="170" height="170" rx="16" fill="#f3f4f6" stroke="#d1d5db"/>
+  <text x="115" y="145" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">A neuron</text>
+  <text x="115" y="180" text-anchor="middle" font-size="14" fill="#374151">weights and a bias,</text>
+  <text x="115" y="200" text-anchor="middle" font-size="14" fill="#374151">learns by gradient</text>
+  <text x="115" y="220" text-anchor="middle" font-size="14" fill="#374151">descent</text>
+  <rect x="45" y="244" width="140" height="22" rx="11" fill="#6b7280"/>
+  <text x="115" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">SESSION 1</text>
+
+  <line x1="202" y1="195" x2="222" y2="195" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- 2 Network -->
+  <rect x="225" y="110" width="170" height="170" rx="16" fill="#f3f4f6" stroke="#d1d5db"/>
+  <text x="310" y="145" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">Neural network</text>
+  <text x="310" y="180" text-anchor="middle" font-size="14" fill="#374151">many neurons</text>
+  <text x="310" y="200" text-anchor="middle" font-size="14" fill="#374151">in layers, same</text>
+  <text x="310" y="220" text-anchor="middle" font-size="14" fill="#374151">training method</text>
+  <rect x="240" y="244" width="140" height="22" rx="11" fill="#6b7280"/>
+  <text x="310" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">SESSION 1</text>
+
+  <line x1="397" y1="195" x2="417" y2="195" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- 3 Language model -->
+  <rect x="420" y="110" width="170" height="170" rx="16" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="505" y="145" text-anchor="middle" font-size="17" font-weight="700" fill="#1e3a8a">Language model</text>
+  <text x="505" y="180" text-anchor="middle" font-size="14" fill="#374151">a huge network that</text>
+  <text x="505" y="200" text-anchor="middle" font-size="14" fill="#374151">predicts the next</text>
+  <text x="505" y="220" text-anchor="middle" font-size="14" fill="#374151">token (word piece)</text>
+  <rect x="435" y="244" width="140" height="22" rx="11" fill="#2563eb"/>
+  <text x="505" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">E.G. CLAUDE</text>
+
+  <line x1="592" y1="195" x2="612" y2="195" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- 4 Coding agent -->
+  <rect x="615" y="110" width="170" height="170" rx="16" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="700" y="145" text-anchor="middle" font-size="17" font-weight="700" fill="#064e3b">Coding agent</text>
+  <text x="700" y="180" text-anchor="middle" font-size="14" fill="#374151">the model in a loop,</text>
+  <text x="700" y="200" text-anchor="middle" font-size="14" fill="#374151">with tools and</text>
+  <text x="700" y="220" text-anchor="middle" font-size="14" fill="#374151">safety checks</text>
+  <rect x="630" y="244" width="140" height="22" rx="11" fill="#059669"/>
+  <text x="700" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">THE PAPER</text>
+
+  <line x1="787" y1="195" x2="807" y2="195" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- 5 You -->
+  <rect x="810" y="110" width="170" height="170" rx="16" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="895" y="145" text-anchor="middle" font-size="17" font-weight="700" fill="#78350f">You + the agent</text>
+  <text x="895" y="180" text-anchor="middle" font-size="14" fill="#374151">you decide and</text>
+  <text x="895" y="200" text-anchor="middle" font-size="14" fill="#374151">understand, it does</text>
+  <text x="895" y="220" text-anchor="middle" font-size="14" fill="#374151">much of the typing</text>
+  <rect x="825" y="244" width="140" height="22" rx="11" fill="#d97706"/>
+  <text x="895" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">YOUR PROJECT</text>
+
+  <text x="500" y="325" text-anchor="middle" font-size="13" fill="#6b7280">Steps 1–2: IAT-nns-for-students · Steps 3–4: this reading · Step 5: IAT-ai-knowledgebase</text>
+</svg>
