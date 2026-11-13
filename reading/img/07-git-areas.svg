@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>Where your changes live in Git</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="470" fill="#ffffff"/>
+
+  <text x="500" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">Where your changes live in Git</text>
+  <text x="500" y="72" text-anchor="middle" font-size="15" fill="#6b7280">Three places on your computer, one on GitHub. Each command moves changes one step.</text>
+
+  <!-- Your computer frame -->
+  <rect x="30" y="100" width="700" height="250" rx="20" fill="#f9fafb" stroke="#9ca3af" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="54" y="126" font-size="14" font-weight="700" fill="#6b7280">YOUR COMPUTER</text>
+
+  <!-- Working folder -->
+  <rect x="55" y="150" width="190" height="130" rx="16" fill="#f3f4f6" stroke="#d1d5db"/>
+  <text x="150" y="184" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">Working folder</text>
+  <text x="150" y="212" text-anchor="middle" font-size="13" fill="#4b5563">the files you (and the</text>
+  <text x="150" y="230" text-anchor="middle" font-size="13" fill="#4b5563">agent) edit right now</text>
+  <text x="150" y="262" text-anchor="middle" font-size="12" fill="#b45309">"modified"</text>
+
+  <!-- Staging -->
+  <rect x="295" y="150" width="190" height="130" rx="16" fill="#fffbeb" stroke="#fcd34d"/>
+  <text x="390" y="184" text-anchor="middle" font-size="17" font-weight="700" fill="#78350f">Staging area</text>
+  <text x="390" y="212" text-anchor="middle" font-size="13" fill="#4b5563">the changes you picked</text>
+  <text x="390" y="230" text-anchor="middle" font-size="13" fill="#4b5563">for the next save point</text>
+  <text x="390" y="262" text-anchor="middle" font-size="12" fill="#b45309">"staged"</text>
+
+  <!-- Local repo -->
+  <rect x="535" y="150" width="170" height="130" rx="16" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="620" y="184" text-anchor="middle" font-size="17" font-weight="700" fill="#1e3a8a">History</text>
+  <text x="620" y="212" text-anchor="middle" font-size="13" fill="#4b5563">every commit: a save</text>
+  <text x="620" y="230" text-anchor="middle" font-size="13" fill="#4b5563">point you can go back to</text>
+  <text x="620" y="262" text-anchor="middle" font-size="12" fill="#1d4ed8">"committed"</text>
+
+  <!-- GitHub -->
+  <rect x="790" y="150" width="180" height="130" rx="16" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="880" y="184" text-anchor="middle" font-size="17" font-weight="700" fill="#064e3b">GitHub</text>
+  <text x="880" y="212" text-anchor="middle" font-size="13" fill="#4b5563">the shared copy:</text>
+  <text x="880" y="230" text-anchor="middle" font-size="13" fill="#4b5563">backup and teamwork</text>
+  <text x="880" y="262" text-anchor="middle" font-size="12" fill="#047857">"remote"</text>
+
+  <!-- forward arrows -->
+  <line x1="247" y1="200" x2="291" y2="200" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+  <line x1="487" y1="200" x2="531" y2="200" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+  <line x1="707" y1="200" x2="786" y2="200" stroke="#4b5563" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="13" font-weight="700" text-anchor="middle">
+    <rect x="232" y="296" width="76" height="24" rx="12" fill="#d97706"/>
+    <text x="270" y="313" fill="#ffffff">add</text>
+    <rect x="466" y="296" width="88" height="24" rx="12" fill="#2563eb"/>
+    <text x="510" y="313" fill="#ffffff">commit</text>
+    <rect x="708" y="296" width="76" height="24" rx="12" fill="#059669"/>
+    <text x="746" y="313" fill="#ffffff">push</text>
+  </g>
+
+  <!-- pull / clone back -->
+  <path d="M 880 284 C 880 420, 160 420, 150 286" fill="none" stroke="#6b7280" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arr)"/>
+  <rect x="440" y="386" width="120" height="24" rx="12" fill="#6b7280"/>
+  <text x="500" y="403" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#ffffff">pull / clone</text>
+
+  <text x="500" y="452" text-anchor="middle" font-size="13" fill="#6b7280">Check where you are at any time with  git status  (or the Source Control panel in VS Code).</text>
+</svg>
