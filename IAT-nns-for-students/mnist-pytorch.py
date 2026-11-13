@@ -1,3 +1,6 @@
+import argparse
+from pathlib import Path
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -5,9 +8,21 @@ from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Button
 import torch.nn.functional as F
+
+# -----------------
+# Where things are
+# -----------------
+HERE = Path(__file__).resolve().parent
+DATA_DIR = HERE / "data"        # MNIST is stored (or downloaded) next to this script
+OUT_DIR = HERE / "outputs"      # pictures are saved here when there is no screen
+
+# Matplotlib picks a window backend by itself (macOS, Windows, Linux desktop).
+# Without a screen (dev container, Codespaces) it uses "agg": then we save pictures instead of showing windows.
+HEADLESS = matplotlib.get_backend().lower() == "agg"
 
 # -----------------
 # Device (CPU / GPU)
@@ -18,8 +33,12 @@ print("Using device:", device)
 # -----------------
 # Hyperparameters
 # -----------------
+parser = argparse.ArgumentParser(description="Train a small neural network on MNIST digits.")
+parser.add_argument("--epochs", type=int, default=5, help="how many times to go through the training data")
+args = parser.parse_args()
+
 batch_size = 64
-epochs = 5
+epochs = args.epochs
 learning_rate = 0.001
 
 # -----------------
@@ -31,14 +50,14 @@ transform = transforms.Compose([
 ])
 
 train_dataset = datasets.MNIST(
-    root="./data",
+    root=DATA_DIR,
     train=True,
     download=True,
     transform=transform
 )
 
 test_dataset = datasets.MNIST(
-    root="./data",
+    root=DATA_DIR,
     train=False,
     download=True,
     transform=transform
@@ -156,13 +175,15 @@ def show_good_and_bad_predictions(model, loader, device, epoch, num_samples=5):
 
     fig.suptitle(f"Epoch {epoch}: top = most confident correct, bottom = most confident wrong")
     plt.tight_layout()
-    plt.show()
+    if HEADLESS:
+        OUT_DIR.mkdir(exist_ok=True)
+        path = OUT_DIR / f"predictions_epoch_{epoch}.png"
+        fig.savefig(path)
+        plt.close(fig)
+        print(f"  saved {path.relative_to(HERE)}")
+    else:
+        plt.show()
 
-
-import torch.nn.functional as F
-import matplotlib
-matplotlib.use("Qt5Agg")
-import matplotlib.pyplot as plt
 
 def show_predictions(model, loader, device, num_samples=5):
     model.eval()
@@ -198,6 +219,11 @@ def show_predictions(model, loader, device, num_samples=5):
     plt.show()
 
 def launch_digit_canvas(model, device):
+    if HEADLESS:
+        print("The drawing canvas needs a window, so it is skipped here (no screen).")
+        print("Run this script on your own computer to draw digits yourself.")
+        return
+
     model.eval()
 
     # large drawing canvas, later downsampled to 28x28

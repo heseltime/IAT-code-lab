@@ -14,3 +14,6 @@ teaching-plan/
 .venv/
 __pycache__/
 .ipynb_checkpoints/
+
+# MNIST script: pictures saved when there is no screen
+IAT-nns-for-students/outputs/

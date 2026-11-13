@@ -1,0 +1,25 @@
+{
+  "name": "IAT neural networks",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.notebookFileRoot": "${workspaceFolder}"
+      }
+    },
+    "codespaces": {
+      "openFiles": ["README.md", "iat_demo.ipynb"]
+    }
+  },
+  "hostRequirements": {
+    "memory": "4gb"
+  }
+}
